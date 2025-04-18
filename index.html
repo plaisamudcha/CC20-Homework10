@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Homework10</title>
+  </head>
+  <body>
+    <div class="w-[900px] mx-auto my-[100px] shadow-lg flex flex-col">
+      <div class="flex justify-around border-b-1 border-gray-100 p-1">
+        <div>
+          <img class="h-[40px]" src="./Logo.png" alt="logo" />
+        </div>
+        <div class="flex items-center gap-4 font-bold">
+          <a href="#">ABOUT US</a>
+          <a href="#">PASSCARD</a>
+          <a href="#">PROFILE</a>
+        </div>
+        <div class="relative flex items-center gap-4 font-bold">
+          <i class="fa-solid fa-search text-gray-500 hover:cursor-pointer"></i>
+          <i class="fa-solid fa-cart-shopping text-gray-400"></i>
+          <div
+            class="absolute bg-red-600 w-[12px] h-[12px] text-xs text-white rounded-full flex items-center justify-center top-1 left-11"
+          >
+            1
+          </div>
+          <a href="#">LOGIN</a>
+          <a href="#">SETUP</a>
+        </div>
+      </div>
+      <div class="text-2xl font-bold px-14 pt-8">My Cart</div>
+      <div class="flex px-14 justify-between flex-grow gap-4 py-5 items-start">
+        <div class="flex flex-col gap-3">
+          <div
+            class="flex flex-grow bg-slate-50 rounded-lg items-center gap-5 px-5 pr-14 py-5"
+          >
+            <div
+              class="border border-green-800 flex justify-center items-center p-1 rounded-full text-sm"
+            >
+              <i class="fa-solid fa-trash-can text-green-700"></i>
+            </div>
+            <div
+              class="flex flex-col w-28 h-25 rounded-xl bg-blue-300 gap-1 py-3 px-2"
+            >
+              <div
+                class="flex w-4 h-4 bg-white rounded-sm items-center justify-center p-3"
+              >
+                <i class="fa-solid fa-file-invoice text-blue-300 text-sm"></i>
+              </div>
+              <p class="text-xs font-bold text-white">Google docs</p>
+              <p class="text-xs text-white">Used for business</p>
+            </div>
+            <div class="flex flex-col gap-1 relative">
+              <p class="font-bold text-lg">Google Docs</p>
+              <div class="flex gap-2 items-center">
+                <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                <div class="w-3 h-3 bg-gray-200 rounded-full"></div>
+                <div class="w-3 h-3 bg-gray-200 rounded-full"></div>
+                <div
+                  class="flex gap-2 items-baseline py-0.5 px-2 border border-green-600 rounded-md"
+                >
+                  <p class="text-xs">LV1-3</p>
+                  <i class="text-xs fa-solid fa-chevron-up"></i>
+                </div>
+              </div>
+              <ul
+                class="bg-white absolute rounded-lg top-14 left-15 text-sm font-bold"
+              >
+                <li class="mb-1.5 pl-1">LV1-3</li>
+                <li class="flex items-baseline gap-2 mb-1.5 pl-1">
+                  <p>LV2-3</p>
+                  <i class="fa-solid fa-check text-green-600"></i>
+                </li>
+                <li class="bg-gray-100 rounded-b-lg pl-1">LV3-3</li>
+              </ul>
+              <p class="text-gray-800">THB 150</p>
+            </div>
+          </div>
+          <div
+            class="flex flex-grow bg-slate-50 rounded-lg items-center gap-5 px-5 pr-14 py-5"
+          >
+            <div
+              class="border border-green-800 flex justify-center items-center p-1 rounded-full text-sm"
+            >
+              <i class="fa-solid fa-trash-can text-green-700"></i>
+            </div>
+            <div
+              class="flex flex-col w-28 h-25 rounded-xl bg-orange-300 gap-1 py-3 px-2"
+            >
+              <div
+                class="flex w-4 h-4 bg-white rounded-sm items-center justify-center p-3"
+              >
+                <i class="fa-solid fa-file-invoice text-orange-300 text-sm"></i>
+              </div>
+              <p class="text-xs font-bold text-white">Google Slides</p>
+              <p class="text-xs text-white">Used for business</p>
+            </div>
+            <div class="flex flex-col gap-1">
+              <p class="font-bold text-lg">Google Slides</p>
+              <div class="flex gap-2 items-center">
+                <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                <div class="w-3 h-3 bg-gray-200 rounded-full"></div>
+                <div class="flex gap-1 items-baseline p-1">
+                  <p class="text-xs">LV3/4</p>
+                  <i class="text-xs fa-solid fa-chevron-down"></i>
+                </div>
+              </div>
+              <p class="text-gray-800">THB 150</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col flex-grow bg-slate-50 rounded-lg gap-3 p-5">
+          <p class="font-bold">Order Info</p>
+          <div class="flex justify-between">
+            <p class="text-gray-400 font-bold">Subtotal</p>
+            <p>THB 300</p>
+          </div>
+          <div
+            class="flex justify-between items-baseline gap-2 border-b-1 border-b-gray-100 pb-5"
+          >
+            <i class="fa-solid fa-ticket text-green-500"></i>
+            <input
+              class="border border-gray-300 rounded-sm px-3 text-xs py-1.5 font-bold flex-grow text-gray-400"
+              type="text"
+              placeholder="Promotion code"
+            />
+            <button
+              class="border text-xs font-bold text-green-600 border-green-600 py-1.5 px-7 rounded-lg"
+            >
+              APPLY
+            </button>
+          </div>
+          <div class="flex justify-between py-2 items-center">
+            <p class="font-bold">Total payment</p>
+            <p class="font-bold text-green-600 text-2xl">THB 300</p>
+          </div>
+          <button
+            class="font-bold text-sm bg-green-300 py-2 rounded-xl shadow-md"
+          >
+            LOG IN TO CHECKOUT
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
